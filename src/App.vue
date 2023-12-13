@@ -25,5 +25,7 @@ useHead({
 </script>
 
 <template>
-  <RouterView />
+  <VanConfigProvider :theme="isDark ? 'dark' : 'light'">
+    <RouterView />
+  </VanConfigProvider>
 </template>
