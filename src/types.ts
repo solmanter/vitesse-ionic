@@ -1,3 +1,3 @@
-import type { ViteSSGContext } from 'vite-ssg'
+import type { HMRPayload } from 'vite'
 
-export type UserModule = (ctx: ViteSSGContext) => void
+export type UserModule = (ctx: HMRPayload) => void
