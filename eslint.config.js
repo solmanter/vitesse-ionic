@@ -5,4 +5,9 @@ export default antfu(
     unocss: true,
     formatters: true,
   },
+  {
+    rules: {
+      'style/max-statements-per-line': 'off',
+    },
+  },
 )

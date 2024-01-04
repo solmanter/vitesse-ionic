@@ -6,7 +6,7 @@
     "build": "vite build",
     "dev": "vite",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview --port 3000",
     "preview-https": "serve dist",
     "test": "vitest",
     "test:e2e": "cypress open",

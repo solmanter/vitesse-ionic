@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:4173'
+const BASE_URL = 'http://localhost:3000'
 
 context('Basic', () => {
   beforeEach(() => {
@@ -7,7 +7,7 @@ context('Basic', () => {
 
   it('basic nav', () => {
     cy.url()
-      .should('eq', BASE_URL)
+      .should('eq', `${BASE_URL}/`)
 
     cy.contains('[Home Layout]')
       .should('exist')
@@ -20,7 +20,7 @@ context('Basic', () => {
     cy.get('[btn]')
       .click()
       .url()
-      .should('eq', BASE_URL)
+      .should('eq', `${BASE_URL}/`)
   })
 
   it('markdown', () => {
