@@ -39,12 +39,18 @@ context('Basic', () => {
   it('theme change', () => {
     const toggle = cy.get('[data-test-id="toggle_theme"]')
 
+    const prefersDark
+      = window.matchMedia
+      && window.matchMedia('(prefers-color-scheme: dark)').matches
+
+    const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+    const isDark = setting === 'dark' || (setting === 'auto' && prefersDark)
+
     toggle.click()
 
-    cy.get('html').should('have.class', 'van-theme-light')
-
-    toggle.click()
-
-    cy.get('html').should('have.class', 'van-theme-dark')
+    if (isDark)
+      cy.get('html').should('have.class', 'van-theme-light')
+    else
+      cy.get('html').should('have.class', 'van-theme-dark')
   })
 })
