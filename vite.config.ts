@@ -1,7 +1,6 @@
 import path from 'node:path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
-import generateSitemap from 'vite-ssg-sitemap'
 import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -149,22 +148,5 @@ export default defineConfig({
   test: {
     include: ['test/**/*.test.ts'],
     environment: 'jsdom',
-  },
-
-  // https://github.com/antfu/vite-ssg
-  ssgOptions: {
-    script: 'async',
-    formatting: 'minify',
-    crittersOptions: {
-      reduceInlineStyles: false,
-    },
-    onFinished() {
-      generateSitemap()
-    },
-  },
-
-  ssr: {
-    // TODO: workaround until they support native ESM
-    noExternal: ['workbox-window', /vue-i18n/],
   },
 })

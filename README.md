@@ -1,9 +1,6 @@
 <p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/154486817-f86b8f20-5463-4122-b6e9-930622e757f2.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
-</p>
-
-<p align='center'>
-Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
+<h1>Vitesse Ionic</h1>
+Mocking up web app and mobile app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 </p>
 
 <br>
@@ -12,20 +9,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 <a href="https://vitesse.netlify.app/">Live Demo</a>
 </p>
 
-<br>
-
-> **Note**: This template is created during the early transition of Vue 3 and Vite. At this moment, if you are seeking for better Vue developer experience and more consistent maintenance, we recommend using [Nuxt 3](https://nuxt.com) instead (it also works perfectly with SPA or SSG as needed). This template still serves as a reference, but expect slower updates.
-
-<br>
-
-<p align='center'>
-<b>English</b> | <a href="https://github.com/antfu/vitesse/blob/main/README.zh-CN.md">简体中文</a>
-<!-- Contributors: Thanks for getting interested, however we DON'T accept new translations to the README, thanks. -->
-</p>
-
-<br>
-
-## Features
+### Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - born with fastness
 
@@ -53,8 +37,6 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 
-- 🖨 Static-site generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg)
-
 - 🦔 Critical CSS via [critters](https://github.com/GoogleChromeLabs/critters)
 
 - 🔤 [Webfont self-hosting](https://github.com/feat-agency/vite-plugin-webfont-dl)
@@ -63,8 +45,6 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest), E2E Testing with [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
 
-- ☁️ Deploy on Netlify, zero-config
-
 <br>
 
 ## Pre-packed
@@ -72,6 +52,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 ### UI Frameworks
 
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+
+- [Vant](https://vant-ui.github.io) - The best vue mobile ui framework.
 
 ### Icons
 
@@ -144,19 +126,19 @@ As this template is strongly opinionated, the following provides a curated list 
 
 ## Try it now!
 
-> Vitesse requires Node >=14.18
+> Vitesse requires Node >= 18.0.0
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse/generate).
+[Generate a vitesse app](https://github.com/antfu/vitesse/generate)
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit antfu/vitesse my-vitesse-app
-cd my-vitesse-app
+npx degit SuleymanQ/vitesse-ionic vitesse-ionic-app
+cd vitesse-ionic-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 

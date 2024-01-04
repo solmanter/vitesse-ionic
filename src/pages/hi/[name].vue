@@ -10,7 +10,7 @@ watchEffect(() => {
 </script>
 
 <template>
-  <div>
+  <div class="w-full flex flex-col items-center justify-center">
     <div text-4xl>
       <div i-carbon-pedestrian inline-block />
     </div>
@@ -36,12 +36,14 @@ watchEffect(() => {
     </template>
 
     <div>
-      <button
-        m="3 t6" text-sm btn
-        @click="router.back()"
-      >
+      <button m="3 t6" text-sm btn @click="router.back()">
         {{ t('button.back') }}
       </button>
     </div>
   </div>
 </template>
+
+<route lang="yaml">
+  meta:
+    layout: default
+</route>
