@@ -6,7 +6,7 @@ Mocking up web app and mobile app with <b>Vitesse</b><sup><em>(speed)</em></sup>
 <br>
 
 <p align='center'>
-<a href="https://vitesse.netlify.app/">Live Demo</a>
+<a href="https://vitesse-ionic.vercel.app/">Live Demo</a>
 </p>
 
 ### Features
@@ -75,7 +75,6 @@ Mocking up web app and mobile app with <b>Vitesse</b><sup><em>(speed)</em></sup>
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
   - [`unplugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n) - unplugin for Vue I18n
 - [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
-- [`vite-ssg-sitemap`](https://github.com/jbaubree/vite-ssg-sitemap) - Sitemap generator
 - [`@vueuse/head`](https://github.com/vueuse/head) - manipulate document head reactively
 - [`vite-plugin-webfont-dl`](https://github.com/feat-agency/vite-plugin-webfont-dl) - Zero-config webfont (Google Fonts) downloader and injector to improve website's performance.
 - [`vite-plugin-vue-devtools`](https://github.com/webfansplz/vite-plugin-vue-devtools) - Designed to enhance the Vue developer experience.
@@ -91,38 +90,13 @@ Mocking up web app and mobile app with <b>Vitesse</b><sup><em>(speed)</em></sup>
 - [Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
 - [Cypress](https://cypress.io/) - E2E testing
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
-- [`vite-ssg`](https://github.com/antfu/vite-ssg) - Static-site generation
-  - [critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
-- [Netlify](https://www.netlify.com/) - zero-config deployment
+- [critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
 - [VS Code Extensions](./.vscode/extensions.json)
   - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
   - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 3 `<script setup>` IDE support
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-
-## Variations
-
-As this template is strongly opinionated, the following provides a curated list for community-maintained variations with different preferences and feature sets. Check them out as well. PR to add yours is also welcome!
-
-###### Official
-
-- [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
-- [vitesse-nuxt3](https://github.com/antfu/vitesse-nuxt3) - Vitesse for Nuxt 3
-- [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
-- [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
-
-###### Community
-
-- [vitesse-ssr-template](https://github.com/frandiox/vitesse-ssr-template) by [@frandiox](https://github.com/frandiox) - Vitesse with SSR
-- [vitailse](https://github.com/zynth17/vitailse) by [@zynth17](https://github.com/zynth17) - Like Vitesse but with TailwindCSS
-- [vitesse-modernized-chrome-ext](https://github.com/xiaoluoboding/vitesse-modernized-chrome-ext) by [@xiaoluoboding](https://github.com/xiaoluoboding) - ⚡️ Modernized Chrome Extension Manifest V3 Vite Starter Template
-- [vitesse-stackter-clean-architect](https://github.com/shamscorner/vitesse-stackter-clean-architect) by [@shamscorner](https://github.com/shamscorner) - A modular clean architecture pattern in vitesse template
-- [vitesse-enterprise](https://github.com/FranciscoKloganB/vitesse-enterprise) by [@FranciscoKloganB](https://github.com/FranciscoKloganB) - Consistent coding styles regardless of team-size.
-- [vitecamp](https://github.com/nekobc1998923/vitecamp) by [@nekobc1998923](https://github.com/nekobc1998923) - Like Vitesse but without SSG/SSR/File based routing, includes Element Plus
-- [vitesse-h5](https://github.com/YunYouJun/vitesse-h5) by [@YunYouJun](https://github.com/YunYouJun) - Vitesse for Mobile
-- [bat](https://github.com/olgam4/bat) by [@olgam4](https://github.com/olgam4) - Vitesse for SolidJS
-- [vitesse-solid](https://github.com/xbmlz/vitesse-solid) by [@xbmlz](https://github.com/xbmlz) - Vitesse for SolidJS, build with [`SolidStart`](https://start.solidjs.com/), includes [UnoCSS](https://github.com/unocss/unocss) and [HopeUI](https://hope-ui.com/).
 
 ## Try it now!
 
@@ -174,27 +148,3 @@ pnpm build
 ```
 
 And you will see the generated file in `dist` that ready to be served.
-
-### Deploy on Netlify
-
-Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
-
-### Docker Production Build
-
-First, build the vitesse image by opening the terminal in the project's root directory.
-
-```bash
-docker buildx build . -t vitesse:latest
-```
-
-Run the image and specify port mapping with the `-p` flag.
-
-```bash
-docker run --rm -it -p 8080:80 vitesse:latest
-```
-
-## Why
-
-I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time.
-
-So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. It's strongly opinionated, but feel free to tweak it or even maintain your own forks. [(see community maintained variation forks)](#variations)

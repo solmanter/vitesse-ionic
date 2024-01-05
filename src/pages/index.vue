@@ -21,8 +21,8 @@ const { t } = useI18n()
       <div i-carbon-campsite inline-block />
     </div>
     <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
+      <a rel="noreferrer" href="https://github.com/SuleymanQ/vitesse-ionic" target="_blank">
+        Vitesse Ionic
       </a>
     </p>
     <p>
