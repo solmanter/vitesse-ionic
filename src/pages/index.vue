@@ -22,7 +22,7 @@ const { t } = useI18n()
     </div>
     <p>
       <a rel="noreferrer" href="https://github.com/SuleymanQ/vitesse-ionic" target="_blank">
-        Vitesse Ionic
+        Vitesse Ionic Updated
       </a>
     </p>
     <p>
