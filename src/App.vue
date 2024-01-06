@@ -1,15 +1,4 @@
 <script setup lang="ts">
-import { StatusBar } from '@capacitor/status-bar'
-
-onMounted(() => {
-  StatusBar.hide()
-  StatusBar.setBackgroundColor({ color: isDark.value ? '#121212' : '#ffffff' })
-})
-
-watch(isDark, (v) => {
-  StatusBar.setBackgroundColor({ color: v ? '#121212' : '#ffffff' })
-})
-
 // https://github.com/vueuse/head
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg

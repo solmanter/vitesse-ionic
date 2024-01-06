@@ -2,6 +2,7 @@
 defineOptions({
   name: 'IndexPage',
 })
+
 const user = useUserStore()
 const name = ref(user.savedName)
 
@@ -13,6 +14,8 @@ function go() {
 }
 
 const { t } = useI18n()
+
+const deviceStore = useDeviceStore()
 </script>
 
 <template>
@@ -22,7 +25,7 @@ const { t } = useI18n()
     </div>
     <p>
       <a rel="noreferrer" href="https://github.com/SuleymanQ/vitesse-ionic" target="_blank">
-        Vitesse Ionic Updated
+        Vitesse Ionic <VanTag type="primary">{{ deviceStore.getPlatform() }}</VanTag>
       </a>
     </p>
     <p>
