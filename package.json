@@ -1,5 +1,7 @@
 {
+  "name": "my-app",
   "type": "module",
+  "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@8.11.0",
   "scripts": {
@@ -14,9 +16,21 @@
     "typecheck": "vue-tsc --noEmit",
     "up": "taze major -I",
     "postinstall": "npx simple-git-hooks",
-    "sizecheck": "npx vite-bundle-visualizer"
+    "sizecheck": "npx vite-bundle-visualizer",
+    "ionic:build": "npm run build",
+    "ionic:serve": "npm run dev"
   },
   "dependencies": {
+    "@capacitor/android": "5.6.0",
+    "@capacitor/app": "5.0.6",
+    "@capacitor/cli": "5.6.0",
+    "@capacitor/core": "5.6.0",
+    "@capacitor/device": "^5.0.6",
+    "@capacitor/haptics": "5.0.6",
+    "@capacitor/ios": "5.6.0",
+    "@capacitor/keyboard": "5.0.7",
+    "@capacitor/splash-screen": "^5.0.6",
+    "@capacitor/status-bar": "5.0.6",
     "@unhead/vue": "^1.8.9",
     "@unocss/reset": "^0.58.3",
     "@vueuse/core": "^10.7.1",
